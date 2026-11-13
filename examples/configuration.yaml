@@ -1,0 +1,14 @@
+# Auszug für die configuration.yaml von Home Assistant.
+# Nach dem Einfügen Home Assistant komplett neu starten: ein Reload der
+# OCPP-Integration lädt shell_command und command_line nicht neu.
+shell_command:
+  wallbox_phase_1p: "/config/wallbox_phase.sh onePhase"
+  wallbox_phase_3p: "/config/wallbox_phase.sh threePhase"
+
+command_line:
+  - sensor:
+      name: Wallbox Phase State
+      unique_id: wallbox_phase_state
+      command: >-
+        /config/wallbox_phase.sh state | /usr/local/bin/python3 -c "import sys,json; print(json.load(sys.stdin).get('value','unknown'))"
+      scan_interval: 60

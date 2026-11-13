@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="t d">
+  <title id="t">Elli Wallbox mit Home Assistant</title>
+  <desc id="d">Ladekabel-Symbol mit Blitz und der Aufschrift 1p und 3p neben dem Projekttitel</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1b2b"/><stop offset="1" stop-color="#12344d"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe066"/><stop offset="1" stop-color="#f59f00"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <g transform="translate(70 50)">
+    <rect width="220" height="220" rx="48" fill="#0f2740" stroke="#3b82a6" stroke-width="4"/>
+    <path d="M122 28 L62 124 H106 L90 194 L158 92 H114 Z" fill="url(#bolt)"/>
+  </g>
+  <text x="330" y="138" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="54" font-weight="700" fill="#ffffff">Elli Wallbox × Home Assistant</text>
+  <text x="332" y="190" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="28" fill="#9fd3e6">OCPP · PV-Überschussladen · lokale 1p/3p-Phasenumschaltung</text>
+  <g font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="24" font-weight="600">
+    <rect x="332" y="222" width="86" height="42" rx="21" fill="#1c4b6b"/><text x="375" y="251" text-anchor="middle" fill="#ffffff">1p</text>
+    <rect x="432" y="222" width="86" height="42" rx="21" fill="#1c4b6b"/><text x="475" y="251" text-anchor="middle" fill="#ffffff">3p</text>
+    <rect x="532" y="222" width="150" height="42" rx="21" fill="#1c4b6b"/><text x="607" y="251" text-anchor="middle" fill="#ffffff">OCPP 1.6</text>
+  </g>
+</svg>
